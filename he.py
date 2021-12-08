@@ -11,10 +11,10 @@ def get_plain_text(filename):
     return document
 
 
-mypath = "C:\Code\he\doc_test\\"
+mypath = "some path"
 files = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 for filename in files:
     print(mypath + filename)
     text = get_plain_text(mypath + filename)
-    with open("doc_test/" + filename + ".txt", "w") as f:
+    with open("other_path/" + filename + ".txt", "w") as f:
         f.write(text)
