@@ -11,7 +11,7 @@ def get_plain_text(filename):
     return document
 
 
-mypath = "some path"
+mypath = "some/path"
 files = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 for filename in files:
     print(mypath + filename)
